@@ -1,10 +1,12 @@
-import React from 'react';
-import './App.css';
+import * as React from "react";
+import styles from './App.module.scss';
+
+import Header from '../../components/Header';
 
 function App() {
   return (
-    <div className="App">
-      1
+    <div className={styles.app}>
+      <Header/>
     </div>
   );
 }
