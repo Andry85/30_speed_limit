@@ -9,7 +9,8 @@ function App() {
   return (
     <div className={styles.app}>
       <Header
-        title="30 km/h is a safe speed that will save the lives of your loved ones."
+        speed="30 km/h"
+        title="is a safe speed that will save the lives of your loved ones."
         pic={sign}
       />
     </div>
