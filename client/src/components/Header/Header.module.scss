@@ -1,15 +1,20 @@
 .header {
 
+    border-bottom: 1px solid #E5E5E5;
+
     &__inner {
         display: flex;
+        padding: 30px 60px 30px 81px;
+        align-items: center;
     }
 
     &__title {
-        padding: 0 0 0 81px;
-        font-size: 36px;
+        padding: 0 20px 0 0;
+        font-size: 3.6rem;
         line-height: 1.2;
         font-weight: 400;
         flex-basis: 70%;
+        margin: 0;
 
         span {
             color: #C4C4C4;
@@ -19,6 +24,6 @@
     }
 
     &__sigh {
-        margin-right: 60px;
+       display: block;
     }
-}
+}   

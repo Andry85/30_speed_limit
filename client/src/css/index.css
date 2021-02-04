@@ -1,8 +1,19 @@
 @import-normalize;
 
+html {
+  font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
+}
+
 
 body {
   background: #F2F2F2;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

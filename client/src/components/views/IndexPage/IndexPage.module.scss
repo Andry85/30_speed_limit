@@ -1,0 +1,33 @@
+.main {
+    h1 {
+        margin: 0 0 45px 0;
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+}
+
+.mainList {
+    list-style: none;
+    margin: 0 0 0 0;
+    padding: 0 0 20px 0;
+
+    li {
+        font-size: 1.8rem;
+        margin: 0 0 25px 0;
+        position: relative;
+        padding: 0 0 0 20px;
+
+        &::before {
+            content: '';
+            background: #AF8662;
+            width: 7px;
+            height: 7px;
+            position: absolute;
+            left: 0;
+            top: 5px;
+        }
+    }
+}
