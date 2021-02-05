@@ -5,6 +5,7 @@ import sign from './img/sign.png';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import IndexPage from '../views/IndexPage';
+import Blog from '../views/Blog';
 
 import {
   BrowserRouter as Router,
@@ -27,6 +28,9 @@ function App() {
             <Switch>
               <Route exact path="/">
                 <IndexPage />
+              </Route>
+              <Route path="/blog">
+                <Blog />
               </Route>
             </Switch>
         </div>
