@@ -5,14 +5,16 @@ import {
   Link
 } from "react-router-dom";
 
+interface Props {
+  blogData: Array<object>;
+}
 
 
-
-function Blog(props: any) {
+function Blog({blogData}: Props) {
 
   return (
     <div className={styles.blog}>
-      {props.blogData.map((article: any) =>
+      {blogData.map((article: any) =>
         <div className={styles.blog__inner} key={article.id}>
           <h2><Link to={article.link}>{article.title}</Link></h2>
           <Link to={article.link}><img src={article.pic} alt=""/></Link>
