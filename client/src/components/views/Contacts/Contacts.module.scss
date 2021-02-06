@@ -1,3 +1,20 @@
 .contacts {
     
+    &__field {
+        display: block;
+        border: 1px solid #E5E5E5;
+        width: 100%;
+        padding: 10px;
+        margin: 0 0 15px 0;
+    }
+
+    &__btn {
+        background: #000;
+        color: #fff;
+        width: 100%;
+        padding: 10px;
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 }

@@ -10,6 +10,7 @@ type HeaderProps = {
 }
 
 function Header({ title, pic, speed }: HeaderProps) {
+  
   return (
     <header className={styles.header}>
       <Nav/>

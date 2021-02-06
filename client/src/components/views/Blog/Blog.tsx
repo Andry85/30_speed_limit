@@ -8,13 +8,8 @@ import {
 
 
 
+function Blog(props: any) {
 
-
-
-
-
-
-function Blog(props : any) {
   return (
     <div className={styles.blog}>
       {props.blogData.map((article: any) =>

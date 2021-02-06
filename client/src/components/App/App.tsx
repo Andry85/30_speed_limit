@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from 'react';
 import styles from './App.module.scss';
 import sign from './img/sign.png';
 
@@ -14,6 +14,10 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+
+import {useTranslation} from 'react-i18next';
+
+
 
 
 import img_001 from './img/001.png';
@@ -47,37 +51,43 @@ const blogs = [
 
 
 
+
 function App() {
+
+  const { t, i18n } = useTranslation();
+
+
   return (
-    <Router>
-      <div className={styles.app}>
-        <Header
-          speed="30 km/h"
-          title="is a safe speed that will save the lives of your loved ones."
-          pic={sign}
-        />
-        <div className={styles.app__container}>
-            <Switch>
-              <Route exact path="/">
-                <IndexPage />
-              </Route>
-              <Route exact path="/blog">
-                <Blog blogData = {blogs} />
-              </Route>
-              <Route exact path="/contacts">
-                <Contacts />
-              </Route>
-              <Route path="/blog/:id">
-                <Article AricleData = {blogs} />
-              </Route>
-              
-            </Switch>
+      <Router>
+        <div className={styles.app}>
+          <Header
+            speed={t('speedLimitHeader')}
+            title={t('headerTitle')}
+            pic={sign}
+          />
+          <div className={styles.app__container}>
+              <Switch>
+                <Route exact path="/">
+                  <IndexPage />
+                </Route>
+                <Route exact path="/blog">
+                  <Blog blogData = {blogs} />
+                </Route>
+                <Route exact path="/contacts">
+                  <Contacts />
+                </Route>
+                <Route path="/blog/:id">
+                  <Article AricleData = {blogs} />
+                </Route>
+                
+              </Switch>
+          </div>
+          <Footer
+            title="All rights reserved. 2021"
+          />
         </div>
-        <Footer
-          title="All rights reserved. 2021"
-        />
-      </div>
-    </Router>
+      </Router>
+
   );
 }
 
