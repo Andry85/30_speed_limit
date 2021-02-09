@@ -5,16 +5,19 @@ import {
   Link
 } from "react-router-dom";
 
-interface Props {
-  blogData: Array<object>;
-}
+import {useTranslation} from 'react-i18next';
 
 
-function Blog({blogData}: Props) {
+
+function Blog() {
+
+  const { t, i18n } = useTranslation();
+
+  const resArr: any = t('blogs', {returnObjects: true});
 
   return (
     <div className={styles.blog}>
-      {blogData.map((article: any) =>
+      {resArr.map((article: any) =>
         <div className={styles.blog__inner} key={article.id}>
           <h2><Link to={article.link}>{article.title}</Link></h2>
           <Link to={article.link}><img src={article.pic} alt=""/></Link>

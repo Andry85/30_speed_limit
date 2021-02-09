@@ -16,7 +16,7 @@
 
     li {
         font-size: 1.8rem;
-        margin: 0 0 25px 0;
+        margin: 0 0 25px 15px;
         position: relative;
         padding: 0 0 0 20px;
 
@@ -24,10 +24,10 @@
             content: '';
             background: #AF8662;
             width: 7px;
-            height: 7px;
+            height: 2px;
             position: absolute;
             left: 0;
-            top: 5px;
+            top: 12px;
         }
     }
 }

@@ -1,15 +1,14 @@
 import * as React from "react";
 import styles from './Footer.module.scss';
+import {useTranslation} from 'react-i18next';
 
 
-type FooterProps = {
-  title: string,
-}
+function Footer() {
+  const { t, i18n } = useTranslation();
 
-function Footer({ title}: FooterProps) {
   return (
     <footer className={styles.footer}>
-      <p>{title}</p>
+      <p>{t('footerText')}</p>
     </footer>
   );
 }

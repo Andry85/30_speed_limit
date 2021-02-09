@@ -6,18 +6,23 @@ import {
   useParams
 } from "react-router-dom";
 
+import {useTranslation} from 'react-i18next';
+
 
 interface ParamTypes {
   id: string
 }
 
 
-function Article(props: any) {
+function Article() {
 
   let {id} = useParams<ParamTypes>();
 
+  const { t, i18n } = useTranslation();
+  const resArr: any = t('blogs', {returnObjects: true});
 
-  const found:any = props.AricleData.find(function (element:any) {
+
+  const found:any = resArr.find(function (element:any) {
     return element.link === `blog/${id}`
   });
 

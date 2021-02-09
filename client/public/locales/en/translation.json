@@ -4,27 +4,57 @@
     "contacts": "Contacts",
     "headerTitle": "is a safe speed that will save the lives of your loved ones.",
     "speedLimitHeader": "30 km/h",
+    "footerText": "All rights reserved. 2021",
+    "contactPage": {
+        "yourName": "Your Name",
+        "yourEmail": "Your Email",
+        "yourPhone": "Your Phone",
+        "yourMessage": "Your Message",
+        "submit": "Submit"
+    },
+    "indexPage": {
+        "title": "Why 30 km/h?",
+        "mainList": [
+            {
+                "count": "50%",
+                "text": "of road accidents in Switzerland"
+            },
+            {
+                "count": "90%",
+                "text": "killed or seriously injured reached Kingston upon Hull"
+            },
+            {
+                "count": "50%",
+                "text": "of children killed or seriously injured, reached in London"
+            },
+            {
+                "count": "35%",
+                "text": "of children were able to play safely on the road, achieved in Edinburgh"
+            }
+        ],
+        "text": "What can you do to reduce the number of road accidents in your city by 50%, to reduce the number of fatalities and severe injuries on the roads by 90%, and to kill or injure 50% fewer children on the streets? And there are twice as many children who, according to their parents, can play on the streets safely? Tale? No, there are real success stories behind these numbers."
+    },
     "blogs": [
         {
             "id": 0,
             "title": "Why 30 km/h?",
-            "pic": "./img/001.png",
+            "pic": "/img/001.png",
             "text": "What can you do to reduce the number of road accidents in your city by 50%, to reduce the number of fatalities and severe injuries on the roads by 90%, and to kill or injure 50% fewer children on the streets? And there are twice as many children who, according to their parents, can play on the streets safely? Tale? No, there are real success stories behind these numbers.",
             "link": "blog/articl1_1",
             "extraText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release."
         },
         {
-            "id": 2,
+            "id": 1,
             "title": "30 km/h?",
-            "pic": "./img/001.png",
+            "pic": "/img/001.png",
             "text": "What can you do to reduce the number of road accidents in your city by 50%, to reduce the number of fatalities and severe injuries on the roads by 90%, and to kill or injure 50% fewer children on the streets? And there are twice as many children who, according to their parents, can play on the streets safely? Tale? No, there are real success stories behind these numbers.",
             "link": "blog/articl1_2",
             "extraText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release."
         },
         {
-            "id": 3,
+            "id": 2,
             "title": "30 km/h?",
-            "pic": "./img/002.png",
+            "pic": "/img/002.png",
             "text": "What can you do to reduce the number of road accidents in your city by 50%, to reduce the number of fatalities and severe injuries on the roads by 90%, and to kill or injure 50% fewer children on the streets? And there are twice as many children who, according to their parents, can play on the streets safely? Tale? No, there are real success stories behind these numbers.",
             "link": "blog/articl1_3",
             "extraText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release."

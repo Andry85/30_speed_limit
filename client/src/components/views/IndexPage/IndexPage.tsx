@@ -5,20 +5,27 @@ import img_001 from './img/001.png';
 import img_002 from './img/002.png';
 
 
+import {useTranslation} from 'react-i18next';
+
+
 
 
 function IndexPage() {
+
+  const { t, i18n } = useTranslation();
+
+  const resArr: any = t('indexPage.mainList', {returnObjects: true});
+
   return (
     <div className={styles.main}>
-      <h1>Why 30 km/h?</h1>
+      <h1>{t('indexPage.title')}</h1>
       <ul className={styles.mainList}>
-        <li><b>50%</b> of road accidents in Switzerland</li>
-        <li><b>90%</b> killed or seriously injured reached Kingston upon Hull</li>
-        <li><b>50%</b> of children killed or seriously injured, reached in London</li>
-        <li><b>35%</b> of children were able to play safely on the road, achieved in Edinburgh</li>
+        {resArr.map((item: any) => 
+          <li><b>{item.count}</b> {item.text}</li>
+        )}
       </ul>
       <img src={img_001} alt=""/>
-      <p>What can you do to reduce the number of road accidents in your city by 50%, to reduce the number of fatalities and severe injuries on the roads by 90%, and to kill or injure 50% fewer children on the streets? And there are twice as many children who, according to their parents, can play on the streets safely? Tale? No, there are real success stories behind these numbers.</p>
+      <p>{t('indexPage.text')}</p>
       <img src={img_002} alt=""/>
     </div>
   );
