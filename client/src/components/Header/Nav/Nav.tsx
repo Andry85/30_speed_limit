@@ -1,6 +1,7 @@
 import * as React from "react";
 import styles from './Nav.module.scss';
 
+
 import {
   Link
 } from "react-router-dom";
@@ -34,6 +35,22 @@ function Nav() {
               <button type="button" onClick={() => changeLanguage('en')}>en</button>
             </li> 
           </ul>
+
+          <div className={styles.mobileNav}>
+            <ul>
+              <li><Link to="/">{t('main')}</Link></li>
+              <li><Link to="/blog">{t('blog')}</Link></li> 
+              <li><Link to="/contacts">{t('contacts')}</Link></li>  
+              <li>
+                <button type="button" onClick={() => changeLanguage('ukr')}>ukr</button>
+              </li>
+              <li>
+                <button type="button" onClick={() => changeLanguage('en')}>en</button>
+              </li> 
+            </ul>
+          </div>
+
+
         </nav>
   );
 }
