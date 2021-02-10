@@ -24,6 +24,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "sass-breakpoints": "^2.1.0",
+    "sass-resources-loader": "^2.1.1",
     "stylelint-processor-styled-components": "^1.10.0",
     "typescript": "^4.0.3",
     "web-vitals": "^0.2.4",
