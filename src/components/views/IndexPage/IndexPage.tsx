@@ -10,11 +10,11 @@ import {useTranslation} from 'react-i18next';
 
 
 
-function IndexPage() {
+const IndexPage: React.FunctionComponent = (): JSX.Element => {
+  
 
   const {t} = useTranslation();
-
-  const resArr: any = t('indexPage.mainList', {returnObjects: true});
+  const resArr: string[] = t('indexPage.mainList', {returnObjects: true});
 
   return (
     <div className={styles.main}>

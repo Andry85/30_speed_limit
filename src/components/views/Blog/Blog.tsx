@@ -9,11 +9,11 @@ import {useTranslation} from 'react-i18next';
 
 
 
-function Blog() {
+const Blog: React.FunctionComponent = (): JSX.Element => {
 
   const {t} = useTranslation();
 
-  const resArr: any = t('blogs', {returnObjects: true});
+  const resArr: string[] = t('blogs', {returnObjects: true});
 
   return (
     <div className={styles.blog}>

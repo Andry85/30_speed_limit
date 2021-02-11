@@ -19,7 +19,8 @@ import {useTranslation} from 'react-i18next';
 
 
 
-function App() {
+
+const App: React.FunctionComponent = (): JSX.Element => {
 
   const {t} = useTranslation();
 

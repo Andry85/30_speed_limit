@@ -3,7 +3,8 @@ import styles from './Footer.module.scss';
 import {useTranslation} from 'react-i18next';
 
 
-function Footer() {
+
+const Footer: React.FunctionComponent = (): JSX.Element => {
   const {t} = useTranslation();
 
   return (

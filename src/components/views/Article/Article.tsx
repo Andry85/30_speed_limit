@@ -14,12 +14,12 @@ interface ParamTypes {
 }
 
 
-function Article() {
+const Article: React.FunctionComponent = (): JSX.Element => {
 
   const {id} = useParams<ParamTypes>();
 
   const {t} = useTranslation();
-  const resArr: any = t('blogs', {returnObjects: true});
+  const resArr: [] = t('blogs', {returnObjects: true});
 
 
   const found:any = resArr.find(function (element:any) {
