@@ -1,11 +1,8 @@
 import * as React from 'react';
 import {
   Formik,
-  FormikHelpers,
-  FormikProps,
   Form,
   Field,
-  FieldProps,
 } from 'formik';
 import * as Yup from 'yup';
 
@@ -39,7 +36,7 @@ const SignupSchema = Yup.object().shape({
 
 const Contacts: React.FC<{}> = () => {
 
-  const { t, i18n } = useTranslation();
+  const {t} = useTranslation();
 
   const initialValues: MyFormValues = { 
     yourName: '',

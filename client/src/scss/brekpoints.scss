@@ -1,9 +1,8 @@
 $breakpoints: (
-  xs: 24rem,
-  sm: 32rem,
-  md: 54rem,
-  lg: 64rem,
-  xl: 80rem
+  sm: 768px,
+  md: 992px,
+  lg: 1200px,
+  xl: 1400px
 );
 
 // mobile-first breakpoint mixin

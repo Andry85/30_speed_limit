@@ -11,7 +11,7 @@ import {useTranslation} from 'react-i18next';
 
 function Blog() {
 
-  const { t, i18n } = useTranslation();
+  const {t} = useTranslation();
 
   const resArr: any = t('blogs', {returnObjects: true});
 

@@ -1,3 +1,5 @@
+@import '../../scss/brekpoints.scss';
+
 .header {
 
     border-bottom: 1px solid #E5E5E5;
@@ -6,6 +8,10 @@
         display: flex;
         padding: 30px 60px 30px 81px;
         align-items: center;
+
+        @include breakpoint(sm, max) {
+            padding: 25px;
+        }
     }
 
     &__title {
@@ -16,6 +22,11 @@
         flex-basis: 70%;
         margin: 0;
 
+        @include breakpoint(sm, max) {
+            flex-basis: 1000%;
+            padding: 0;
+        }
+
         span {
             color: #C4C4C4;
             font-weight: 600;
@@ -25,5 +36,9 @@
 
     &__sigh {
        display: block;
+
+       @include breakpoint(sm, max) {
+            display: none;
+       }
     }
 }   

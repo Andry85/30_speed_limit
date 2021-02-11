@@ -1,24 +1,9 @@
-.blog {
-    h2 {
-        a {
-            color: #000;
-            text-decoration: none;
-        }
-        margin: 0 0 35px 0;
-    }
+@import '../../../scss/brekpoints.scss';
 
-    &__readMore {
-        color: #497CE0;
-        text-decoration: none;
+.article {
 
-        span {
-            font-size: 0.9rem;
-            position: relative;
-            top: -2px;
-        }
+    h1 {
+        font-size: 2rem;
     }
-
-    &__inner {
-        margin: 0 0 40px 0;
-    }
+   
 }

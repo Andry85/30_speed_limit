@@ -18,7 +18,7 @@ function Article() {
 
   let {id} = useParams<ParamTypes>();
 
-  const { t, i18n } = useTranslation();
+  const {t} = useTranslation();
   const resArr: any = t('blogs', {returnObjects: true});
 
 

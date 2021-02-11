@@ -12,7 +12,7 @@ import {useTranslation} from 'react-i18next';
 
 function IndexPage() {
 
-  const { t, i18n } = useTranslation();
+  const {t} = useTranslation();
 
   const resArr: any = t('indexPage.mainList', {returnObjects: true});
 

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, {useState} from "react";
 import styles from './Nav.module.scss';
 
 
@@ -11,11 +11,13 @@ import {useTranslation} from 'react-i18next';
 
 function Nav() {
 
-  const { t, i18n } = useTranslation();
+  const {t, i18n } = useTranslation();
 
   const changeLanguage = (lng: any) => {
     i18n.changeLanguage(lng);
   };
+
+  const [isVisibleMobileMenu, setisVisibleMobileMenu] = useState(false);
 
 
   return (
@@ -37,17 +39,27 @@ function Nav() {
           </ul>
 
           <div className={styles.mobileNav}>
-            <ul>
-              <li><Link to="/">{t('main')}</Link></li>
-              <li><Link to="/blog">{t('blog')}</Link></li> 
-              <li><Link to="/contacts">{t('contacts')}</Link></li>  
-              <li>
-                <button type="button" onClick={() => changeLanguage('ukr')}>ukr</button>
-              </li>
-              <li>
-                <button type="button" onClick={() => changeLanguage('en')}>en</button>
-              </li> 
-            </ul>
+            <div 
+            className={styles.mobileNav__burger}
+            onClick={() => setisVisibleMobileMenu(!isVisibleMobileMenu)}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            {isVisibleMobileMenu  &&
+              <ul>
+                <li><Link to="/">{t('main')}</Link></li>
+                <li><Link to="/blog">{t('blog')}</Link></li> 
+                <li><Link to="/contacts">{t('contacts')}</Link></li>  
+                <li>
+                  <button type="button" onClick={() => changeLanguage('ukr')}>ukr</button>
+                </li>
+                <li>
+                  <button type="button" onClick={() => changeLanguage('en')}>en</button>
+                </li> 
+              </ul>
+            }
           </div>
 
 
