@@ -34,7 +34,7 @@ const SignupSchema = Yup.object().shape({
 
 
 
-const Contacts: React.FC<{}> = () => {
+const Contacts: React.FC<unknown> = () => {
 
   const {t} = useTranslation();
 

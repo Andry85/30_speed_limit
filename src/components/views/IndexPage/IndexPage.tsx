@@ -20,8 +20,8 @@ function IndexPage() {
     <div className={styles.main}>
       <h1>{t('indexPage.title')}</h1>
       <ul className={styles.mainList}>
-        {resArr.map((item: any) => 
-          <li><b>{item.count}</b> {item.text}</li>
+        {resArr.map((item: any, index: number) => 
+          <li key={index}><b>{item.count}</b> {item.text}</li>
         )}
       </ul>
       <img src={img_001} alt=""/>

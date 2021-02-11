@@ -16,7 +16,7 @@ interface ParamTypes {
 
 function Article() {
 
-  let {id} = useParams<ParamTypes>();
+  const {id} = useParams<ParamTypes>();
 
   const {t} = useTranslation();
   const resArr: any = t('blogs', {returnObjects: true});
