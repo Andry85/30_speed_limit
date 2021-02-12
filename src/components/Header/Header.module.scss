@@ -4,6 +4,10 @@
 
     border-bottom: 1px solid #E5E5E5;
 
+    @include breakpoint(sm, max) {
+        padding-top: 40px;
+    }
+
     &__inner {
         display: flex;
         padding: 30px 60px 30px 81px;
@@ -38,7 +42,10 @@
        display: block;
 
        @include breakpoint(sm, max) {
-            display: none;
+            position: fixed;
+            right: 10px;
+            top: 8px;
+            width: 35px;
        }
     }
 }   

@@ -1,7 +1,18 @@
 {
-    "main": "Main",
-    "blog": "Blog",
-    "contacts": "Contacts",
+    "mainMenu": [
+        {
+            "title": "Main",
+            "url": "/"
+        },
+        {
+            "title": "Blog",
+            "url": "/blog"
+        },
+        {
+            "title": "Contacts",
+            "url": "/contacts"
+        }
+    ],
     "headerTitle": "is a safe speed that will save the lives of your loved ones.",
     "speedLimitHeader": "30 km/h",
     "footerText": "All rights reserved. 2021",

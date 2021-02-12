@@ -15,18 +15,23 @@ const Nav: React.FunctionComponent = (): JSX.Element => {
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
+    setisVisibleMobileMenu(!isVisibleMobileMenu);
   };
 
   const [isVisibleMobileMenu, setisVisibleMobileMenu] = useState(false);
+
+  const menuArr: string[] = t('mainMenu', {returnObjects: true});
 
 
   return (
    
         <nav className={styles.nav}>
           <ul className={styles.navList}>
-            <li><Link to="/">{t('main')}</Link></li>
-            <li><Link to="/blog">{t('blog')}</Link></li> 
-            <li><Link to="/contacts">{t('contacts')}</Link></li>  
+            {menuArr.map((item: any, index: number) => 
+              <li key={index}>
+                <Link to={item.url}>{item.title}</Link>
+              </li>
+            )}
           </ul>
 
           <ul className={styles.navList}>
@@ -49,9 +54,14 @@ const Nav: React.FunctionComponent = (): JSX.Element => {
             </div>
             {isVisibleMobileMenu  &&
               <ul>
-                <li><Link to="/">{t('main')}</Link></li>
-                <li><Link to="/blog">{t('blog')}</Link></li> 
-                <li><Link to="/contacts">{t('contacts')}</Link></li>  
+                {menuArr.map((item: any, index: number) => 
+                  <li 
+                    key={index}
+                    onClick={() => setisVisibleMobileMenu(!isVisibleMobileMenu)}
+                  >
+                    <Link to={item.url}>{item.title}</Link>
+                  </li>
+                )}
                 <li>
                   <button type="button" onClick={() => changeLanguage('ukr')}>ukr</button>
                 </li>
