@@ -24,6 +24,7 @@ const App: React.FunctionComponent = (): JSX.Element => {
 
   const {t} = useTranslation();
 
+  
 
   return (
       <Router>
